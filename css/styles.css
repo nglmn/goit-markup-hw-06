@@ -174,7 +174,7 @@ ul, ol{
 
 
 .mob-menu{
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     position: absolute;
     padding-top: 72px;
@@ -241,10 +241,10 @@ ul, ol{
 }
 
 .mob-address-list{
+    margin-top: 168px;
     display: flex;
     flex-direction: column;
     gap: 24px;
-    position: absolute;
     bottom: 128px;
 }
 .mob-address-link{
@@ -262,10 +262,10 @@ ul, ol{
 
 
 .mob-social-list{
+    margin-top: 48px;
     display: flex;
     gap: 40px;
     bottom: 40px;
-    position: absolute;
 }
 .mob-social-item{
     width: calc((100% - 40px * 3) / 4);
@@ -585,8 +585,6 @@ ul, ol{
     /* margin-right: 120px; */
 }
 .footer-logo-link{
-    display: flex;
-    align-items: center;
     color: #4d5ae5;
     font-family: Raleway, sans-serif;
     font-size: 18px;
@@ -610,9 +608,6 @@ ul, ol{
 .footer-social{
     margin: 0 auto;
     margin-top: 72px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 .footer-social-subtitle{
     text-align: center;
@@ -652,9 +647,6 @@ ul, ol{
     background-color:#31D0AA;
 }
 .footer-input-submit{
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
     margin-top: 72px;
 }
 .footer-form-subtitle{
@@ -758,8 +750,6 @@ ul, ol{
     top: 50%;
     left: 50%;
     width: 288px;
-    height: 623px;
-    min-height: 584px;
     border-radius: 4px;
     background-color: #FCFCFC;
     padding: 72px 24px 24px 24px;
@@ -974,20 +964,22 @@ ul, ol{
     .container {
         max-width: 766px;
     }
+    .header-container {
+        align-items: center;
+    }
     .header{
         padding-top: 0;
         padding-bottom: 0;
     }
     .header-menu-list{
         display: flex;
-        margin-left: 120px;
+        margin-left: 76px;
     }
     .header-address-list{
         display: flex;
         flex-direction: column;
-        padding-top: 15px;
-        padding-bottom: 15px;
-        gap: 3px;
+        align-items: center;
+        gap: 12px;
     }
     .header-address-link{
         font-size: 12px;
@@ -1027,6 +1019,7 @@ ul, ol{
         width: calc((100% - 24px) / 2);
     }
     .goals-subtitle{
+        font-weight: 700;
         text-align: left;
     }
     .team-list{
@@ -1039,11 +1032,11 @@ ul, ol{
         gap: 72px 24px;
     }
         
-        .portfolio-list-item {
+    .portfolio-list-item {
         width: 356px;
     }
     .footer-container{
-        padding-left: 108px;
+        width: 584px;
     }
     .footer-wrapper{
         display: flex;
@@ -1064,7 +1057,6 @@ ul, ol{
     }
     .footer-input-submit{
         margin-left: 0;
-        margin-top: 72px;
     }
     .footer-input-email{
         width: 264px;
@@ -1078,7 +1070,6 @@ ul, ol{
     }
     .modal{
         width: 408px;
-        height: 584px;
     }
 }
 
@@ -1087,11 +1078,12 @@ ul, ol{
     .container{
         max-width: 1158px;
     }
+    .header-container{
+        align-items: center;
+    }
     .header-address-list{
         flex-direction: row;
         gap: 40px;
-        padding-top: 24px;
-        padding-bottom: 24px;
     }
     .header-address-link{
         font-size: 16px;
@@ -1132,6 +1124,9 @@ ul, ol{
         line-height: 1.2;
         text-transform: none;
     }
+    .goals-descr{
+        font-weight: 400;
+    }
     .team{
         padding-top: 120px;
         padding-bottom: 120px;
@@ -1151,16 +1146,16 @@ ul, ol{
     }
     .footer-container{
         flex-direction: row;
-        padding-left: 0;
+        padding-left: 15px;
+        width: 100%;
     }
     .footer-wrapper {
         display: flex;
         gap: 120px;
-        align-items: flex-start;
-        justify-content: space-between;
     }
     .footer-input-email{
-        width: 288px;
+        width: 264px;
+        opacity: 1;
     }
     .footer-input-submit{
         margin-left: 80px;
