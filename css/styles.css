@@ -177,7 +177,7 @@ ul, ol{
     width: 100%;
     height: 100vh;
     position: absolute;
-    padding-top: 72px;
+    padding: 72px 15px 40px 15px;
     top: 0;
     left: 0;
     background: #ffffff;
@@ -190,6 +190,12 @@ ul, ol{
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
+}
+.mob-menu-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
 }
 .mob-menu-list{
     display: flex;
@@ -240,8 +246,13 @@ ul, ol{
     fill: #ffffff;
 }
 
+
+.mob-links-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
 .mob-address-list{
-    margin-top: 168px;
     display: flex;
     flex-direction: column;
     gap: 24px;
@@ -262,7 +273,6 @@ ul, ol{
 
 
 .mob-social-list{
-    margin-top: 48px;
     display: flex;
     gap: 40px;
     bottom: 40px;
@@ -381,7 +391,7 @@ ul, ol{
     text-align: center;
     color: #2e2f42;
     font-size: 36px;
-    font-weight: 500;
+    font-weight: 700;
     line-height: 1.11;
     letter-spacing: 0.02em;
     margin-bottom: 8px;
@@ -1120,6 +1130,7 @@ ul, ol{
         width: calc((100% - 24px * 3) / 4);
     }
     .goals-subtitle{
+        font-weight: 500;
         font-size: 20px;
         line-height: 1.2;
         text-transform: none;
